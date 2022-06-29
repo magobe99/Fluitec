@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+    color: #081c15;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-family: 'Mate SC', serif;
+}
+body{
+    
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: #f2e9e4;
+}
+.container{
+    width: 100%;
+   
+}
+.titulo h1{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    background: #0a9396;
+    color: #fff;
+    padding: 50px;
+}
+.titulo2{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    background: #0a9396;
+    color: #fff;
+    padding: 50px;
+}
+.navbar-nav{
+    color: #000;
+}
+.navbar{
+    background: #cddafd;
+ 
+    
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background-image: url("../IMG/mangueras\ bodega.jpg");
+    background-size: 100% 100%;
+    color: #081c15;
+}
+.t-imagen{
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    padding: 200px;
+}
+
+section.contactenos {
+    width: 100%;
+    height: 650px;
+}
+.div-contacto   {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+footer	   { 	
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #83c5be;
+    color: #fff;
+    
+}

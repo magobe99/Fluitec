@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login</title>
+
+        <!--========================================
+            Fuentes - Tipo de letra - Iconografia 
+        ==========================================-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+        <!--========================================
+           Mis estilos
+        ==========================================-->
+        <link rel="stylesheet" href="css/estilo.css">
+
+
+    </head>
+    <body>
+
+        <!--========================================
+           contenido
+        ==========================================-->
+
+        <div class="contenedor-login">
+
+            <!--========================================
+                Slider
+            ==========================================-->
+            <div class="contenedor-slider">
+
+                <div class="slider">
+
+                    <!-- Slide 1 -->
+
+                    <div class="slide fade ">
+                        <img src="img/mangueras-persona.jpg" alt="">
+
+                        <div class="contenido-slider">
+
+                        </div>
+
+                    </div>
+
+                    <div class="slide fade ">
+                        <img src="img/mangueras-hidraulicas-renoflex.jpg" alt="">
+
+                        <div class="contenido-slider">
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide fade">
+                        <img src="img/imagen1.jpg" alt="">
+
+                        <div class="contenido-slider">
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- Botones next y prev -->
+                <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+
+                <!-- dots -->
+                <div class="dots">
+
+                    <!-- <span class="dot active"></span> -->
+
+                </div>
+
+            </div>
+
+            <!--========================================
+                Formularios
+            ==========================================-->
+            <div class="contenedor-texto">
+
+                <div class="contenedor-form">
+
+                    <h1 class="titulo">FLUYTEC</h1>
+                    <p class="descripcion">Ingresa con tu cuenta mediante id y contraseña</p>
+
+                    <!-- Tabs -->
+                    <ul class="tabs-links">
+                        <li class="tab-link active">Actualizar contraseña</li>
+                        
+                    </ul>
+
+                    <!--========================================
+                        Formulario logue
+                    ==========================================-->
+                    <form action="" method="POST" id="form_id" name="myform" class="formulario active" th:action="@{/ModificarContraseña}" th:object="${usuario}">
+
+                       
+
+                        
+                        <div class="grupo-input">
+
+                            <input type="password" id="password" placeholder="Contraseña nueva" name="contrasena_usuario" class="input-text clave">
+                            <input id="codUsuario" name="id_usuarios" type="hidden" class="form-control"  value="${id_usuarios}"  >
+                            <button type="button" class="icono fas fa-eye mostrarClave"></button>
+
+                        </div>
+
+           
+                         <th><span class="cnt"> 
+                                    <button class="btn btn-primary btn-large" type="submit" >Actualizar</button></span></td> 
+                                </tr>
+                                <br><br>
+                        <li>
+                            <a th:href="@{/}">Volver al inicio</a>
+                        </li>
+                        <br><br>
+
+                    </form>
+
+                    <!--========================================
+                       Formulario de Registro
+                   ==========================================-->
+                    <!--========================================
+                        Formulario de Registro
+                    ==========================================-->
+                    
+                    
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--========================================
+           Mis Scripts
+        ==========================================-->
+        <script src="js/app.js"></script>
+
+    </body>
+</html>
